@@ -5,13 +5,24 @@ Preface:
 
 You're allowed to google, read the docs, use whatever editor you like, and install gems to accomplish things.  Feel free to ask questions.
 
-Most importantly, know that we're more interested in seeing a working product than we are about adhereing to standards and conventions and the like.
+Things to keep in mind:
 
-0. This test is designed to be atypical. While this isn't a Golf exercise, think about the minimal amount of code needed to complete the requirements. Try not to let scope creep dominate just because certain things might be bad practice in a production app. 
-1. Ask questions. Read the Docs. Be efficient with our time and show us what you can do.
-2. Clone this repository to the pairing station.
-3. Using Sinatra, we've build out a (buggy and minimal) yet mostly functioning User registration system
-  - Database is in memory only and as such needs to be reconstructed every time the server starts
-  - Database is initially constructed out of a DATA section at the end of the sinatra file.
-4. Extend this to allow a user to sign in and out.
-5. Extend and rewrite this to store and verify encrypted passwords instead of plain text. Use whatever encryption method you wish.
+0. This test is designed to be atypical. While this isn't a Golf exercise, think about the *minimal* amount of code needed to complete the requirements.
+1. Try not to let scope creep dominate just because certain things might be bad practice in a production app. 
+2. Ask questions. Read the Docs.
+3. You need not complete the whole task in the allotted time. It is designed to be a series of tasks which increase in difficulty as you progress.
+4. Let's talk: What do you know about code reloading in a rails vs sinatra app?
+
+Task list:
+
+1. Clone this repository to the pairing station.
+2. We've built out a mostly functioning User registration system
+  - Sinatra is being used to serve requests.
+  - Database is in sqlite, in memory only.
+  - ORM is Sequel.
+3. Make Sequel persist data across launches by writing to a .sqlite file.
+4. Extend the application to allow a user to sign in and out.
+6. Create an endpoint which renders the currently logged in user object in JSON, to be consumed by a third party app.
+5. Rewrite to store and verify encrypted passwords instead of plain text. Use the bcrypt library.
+7. Implement cookies to remember a logged in user.
+8. Write tests.
