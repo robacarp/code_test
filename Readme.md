@@ -1,7 +1,7 @@
 Code Test
 ====
 
-Preface:
+**Preface:**
 
 You're allowed to google, read the docs, use whatever editor you like, and install gems to accomplish things.  Feel free to ask questions.
 
