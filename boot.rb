@@ -5,16 +5,9 @@ require 'haml'
 require 'sqlite3'
 require 'sequel'
 
-DB = Sequel.sqlite
-Sequel::Model.db = DB
-
-DB.create_table :users do
-  primary_key :id
-  varchar :username
-  varchar :password
-end
-
-require './user.rb'
+require './orm.rb'
 require './web.rb'
 
-Web.run!
+if ENV['RACK_ENV'] != 'test'
+  Web.run!
+end
