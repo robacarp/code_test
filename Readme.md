@@ -27,10 +27,9 @@ Sinatra is a minimalist ruby web framework. It does not have any builtin code-re
 **Task list:**
 
 1. Clone this repository to the pairing station.
-2. Poke around, exercise the app. See how it behaves.
-3. Make Sequel persist data across launches by writing to a .sqlite file.
-4. Extend the application to allow a user to sign in and out.
+2. Poke around, exercise the app. See how it behaves. Look for bugs.
+3. Write tests around current functionality (See `/test`).
+4. Make Sequel persist data across launches by writing to a sqlite file.
+5. Use Sinatra sessions to allow a user to sign in and out (write tests).
 6. Create an endpoint which renders the currently logged in user object in JSON, to be consumed by a third party app.
-5. Rewrite to store and verify encrypted passwords instead of plain text. Use the bcrypt library.
-7. Implement cookies to remember a logged in user.
-8. Write tests using MiniTest.
+7. Rewrite to store and verify encrypted passwords instead of plain text.
