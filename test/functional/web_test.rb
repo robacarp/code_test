@@ -1,6 +1,6 @@
-require_relative './test_helper'
+require_relative '../test_helper'
 
-class ApplicationTest < AppTest
+class WebTest < AppTest
   def test_app_loads
     get '/'
     assert_equal 302, last_response.status

@@ -5,10 +5,9 @@ require 'rack/test'
 ENV['RACK_ENV'] = 'test'
 
 require_relative '../boot'
+require_relative './support/acceptance_helper'
 
-class AppTest < MiniTest::Test
-  include Rack::Test::Methods
-
+module AppTestHelper
   def app
     Web
   end
@@ -16,4 +15,14 @@ class AppTest < MiniTest::Test
   def request_url
     last_request.url.gsub %r|^http://example\.org|, ''
   end
+end
+
+class AppTest < MiniTest::Test
+  include AppTestHelper
+  include Rack::Test::Methods
+end
+
+class AppAcceptanceTest < AppTest
+  include AppTestHelper
+  include AcceptanceHelper
 end
