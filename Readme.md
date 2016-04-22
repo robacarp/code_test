@@ -7,11 +7,11 @@ You're allowed to google, read the docs, use whatever editor you like, and insta
 
 **Things to keep in mind:**
 
-0. You need **not** complete the whole task list in the hour provide. The list is a series of tasks which increase in difficulty as you progress.
-1. Think about the *minimal* amount of code needed to complete the requirements. While this isn't a Golf exercise, it also isn't an exercise in demonstrating production quality error handling.
-2. Ask questions. Read the Docs. We're here so I can see how you learn, not what you have memorized.
-3. The atypical components have excellent documentation linked below.
-4. Try not to let **scope creep** dominate just because certain things might be bad practice in a production app. It is important to complete the tasks, not build a perfect production-quality app.
+1. You need **not** complete the whole task list in the hour provided. The list is a series of tasks which increase in difficulty as you progress.
+2. Think about the *minimal* amount of code needed to complete the requirements. While this isn't a Golf exercise, it also isn't an exercise in demonstrating production quality error handling.
+3. Ask questions. Read the Docs. We're here so I can see how you learn, not what you have memorized.
+4. The atypical components have excellent documentation linked below.
+5. Try not to let **scope creep** dominate just because certain things might be bad practice in a production app. It is important to complete the tasks, not build a perfect production-quality app.
 
 **Application:**
 
@@ -28,7 +28,8 @@ Sinatra is a minimalist ruby web framework. It does not have any builtin code-re
 
 1. Clone this repository to the pairing station.
 2. Poke around, exercise the app. See how it behaves. Look for bugs.
-3. Write tests around current functionality (See `/test`).
+3. Write tests around current functionality (See `/test` or `/spec`
+   depending on your `minitest` vs. `rspec` preference).
 4. Make Sequel persist data across launches by writing to a sqlite file.
 5. Use Sinatra sessions to allow a user to sign in and out (write tests).
 6. Create an endpoint which renders the currently logged in user object in JSON, to be consumed by a third party app.

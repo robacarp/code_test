@@ -5,6 +5,9 @@ require 'haml'
 require 'sqlite3'
 require 'sequel'
 
+require 'byebug'
+require 'pry'
+
 require './orm.rb'
 require './web.rb'
 
